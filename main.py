@@ -48,9 +48,9 @@ janela.title("Cotações de Criptomoedas")
 janela.geometry("700x500")
 janela.resizable(False, False)
 
-# Carregar imagem com PIL e usar CTkImage
+
 try:
-    img_pillow = Image.open("cripto.png")  # Certifique-se de que o caminho para a imagem está correto
+    img_pillow = Image.open("cripto.png")  
     img = ctk.CTkImage(light_image=img_pillow, dark_image=img_pillow, size=(250, 250))  # Redimensionar a imagem
     label_img = ctk.CTkLabel(janela, image=img, text="")
     label_img.place(x=5, y=65)
